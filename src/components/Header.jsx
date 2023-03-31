@@ -1,33 +1,37 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import "./Header.css";
 // import logo from "../logo-flat.png";
-import logo from "../sudhijan.png";
+// import logo from "../sudhijan.png";
+import BrandLogo from "./BrandLogo";
+import NavLink from "./NavLink";
 
 function Header() {
+  const { pathname } = useLocation();
   return (
-    <header class="header">
-      <div className="header__brand">
+    <header className="header">
+      {/* <div className="header__brand">
         <img className="header__logo" src={logo} alt="Sudhijan Pathagar" />
         <span className="header__title">Sudhijan Pathagar</span>
-      </div>
+      </div> */}
+      <BrandLogo />
       <nav className="nav">
-        <Link className="nav__link active" to="/">
+        <NavLink path="/" currentPath={pathname}>
           Home
-        </Link>
-        <Link className="nav__link" to="/about">
+        </NavLink>
+        <NavLink path="/about" currentPath={pathname}>
           About
-        </Link>
-        <Link className="nav__link" to="/history">
+        </NavLink>
+        <NavLink path="/history" currentPath={pathname}>
           History
-        </Link>
-        <Link className="nav__link" to="/gallery">
+        </NavLink>
+        <NavLink path="/gallery" currentPath={pathname}>
           Gallery
-        </Link>
-        <Link className="nav__link" to="/contact">
+        </NavLink>
+        <NavLink path="/contact" currentPath={pathname}>
           Contact
-        </Link>
+        </NavLink>
       </nav>
     </header>
   );

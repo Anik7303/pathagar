@@ -7,8 +7,10 @@
     "body body"
     "footer footer";
   grid-template-rows: max-content auto max-content;
+  position: relative;
 }
 
 .content {
+  margin-top: 3.75rem;
   grid-area: body;
 }
