@@ -13,8 +13,21 @@ function Header() {
         <span className="header__title">Sudhijan Pathagar</span>
       </div>
       <nav className="nav">
-        <Link to="/">Home</Link>
-        <Link to="/login">Login</Link>
+        <Link className="nav__link active" to="/">
+          Home
+        </Link>
+        <Link className="nav__link" to="/about">
+          About
+        </Link>
+        <Link className="nav__link" to="/history">
+          History
+        </Link>
+        <Link className="nav__link" to="/gallery">
+          Gallery
+        </Link>
+        <Link className="nav__link" to="/contact">
+          Contact
+        </Link>
       </nav>
     </header>
   );
