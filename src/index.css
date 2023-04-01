@@ -3,10 +3,11 @@
   --color-black: #222;
   --color-white: #f0f0f0;
   --color-grey: #ccc;
-  --color-primary: #046d30;
+  --color-primary: rgb(4, 109, 48);
   --color-secondary: rgb(148, 11, 11);
   --color-red: rgb(207, 10, 10);
   --color-font: #222;
+  --color-box-shadow: rgba(4, 109, 48, 0.2);
 }
 
 *,
@@ -53,4 +54,16 @@ h4,
 h5,
 h6 {
   font-family: "Open Sans", sans-serif;
+}
+
+.btn {
+  cursor: pointer;
+  outline: none;
+  color: var(--color-black);
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--color-black);
 }
