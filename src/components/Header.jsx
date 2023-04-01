@@ -20,9 +20,9 @@ function Header() {
         <NavLink path="/" currentPath={pathname}>
           Home
         </NavLink>
-        {/* <NavLink path="/about" currentPath={pathname}>
+        <NavLink path="/about" currentPath={pathname}>
           About
-        </NavLink> */}
+        </NavLink>
         <NavLink path="/history" currentPath={pathname}>
           History
         </NavLink>
