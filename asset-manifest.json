@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/pathagar/static/css/main.82e011f4.css",
-    "main.js": "/pathagar/static/js/main.0df25f9f.js",
+    "main.js": "/pathagar/static/js/main.0152f2f6.js",
     "static/media/sudhijan.png": "/pathagar/static/media/sudhijan.73793f19d33ca8f4a262.png",
     "index.html": "/pathagar/index.html",
     "main.82e011f4.css.map": "/pathagar/static/css/main.82e011f4.css.map",
-    "main.0df25f9f.js.map": "/pathagar/static/js/main.0df25f9f.js.map"
+    "main.0152f2f6.js.map": "/pathagar/static/js/main.0152f2f6.js.map"
   },
   "entrypoints": [
     "static/css/main.82e011f4.css",
-    "static/js/main.0df25f9f.js"
+    "static/js/main.0152f2f6.js"
   ]
 }
