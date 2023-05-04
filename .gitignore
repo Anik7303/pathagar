@@ -3,5 +3,6 @@
 
 # environment variables
 .env*
+!.env.example
 
 # misc
