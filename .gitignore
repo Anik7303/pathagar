@@ -1,0 +1,17 @@
+# node package files
+node_modules/*
+
+# environment variables
+.env*
+!.env.example
+
+# production
+build/*
+.vercel
+.netlify
+
+# visual studio code settings
+.vscode/*
+
+# misc
+*.log*

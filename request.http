@@ -1,0 +1,12 @@
+@host = localhost
+@port = 5000
+@baseurl = http://{{host}}:{{port}}
+
+### Root route
+GET {{baseurl}}
+
+### test route
+GET {{baseurl}}/test
+
+### random route - check 404 error
+GET {{baseurl}}/random
