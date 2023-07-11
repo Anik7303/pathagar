@@ -56,6 +56,7 @@ function Header() {
           <a href="#">পুরুষ্কার</a>
           <a href="#">বৃত্তি</a>
           <a href="#">গ্যালারী</a>
+          <a href="#">বই অনুসন্ধান</a>
         </LinkContainer>
       </Nav>
     </Wrapper>
