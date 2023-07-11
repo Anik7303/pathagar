@@ -1,65 +1,79 @@
+import { Link, NavLink as _NavLink } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../assets/logo.svg";
 
-const Wrapper = styled.header`
-  grid-area: header;
+const Container = styled.header`
+  padding: 8px;
 `;
 
 const Nav = styled.nav`
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-const Brand = styled.div`
+const BrandLink = styled(Link)`
   height: 100%;
   display: flex;
   align-items: center;
+  text-decoration: none;
+  font-family: inherit;
+  color: inherit;
 `;
 
 const Logo = styled.img`
   height: 40px;
-  margin: 8px;
 `;
 
 const BrandName = styled.div`
+  margin-left: 8px;
   font-size: inherit;
   font-family: inherit;
   font-weight: bold;
   white-space: nowrap;
 `;
 
-const LinkContainer = styled.div`
-  width: 100%;
+const NavLinks = styled.div`
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
+  gap: 8px;
+`;
 
-  & > a {
-    display: block;
+const NavLink = styled(_NavLink)`
+  color: inherit;
+  text-decoration: none;
+
+  &.active {
+    font-weight: bold;
+  }
+
+  &:hover {
+    text-decoration: underline;
   }
 `;
 
 function Header() {
   return (
-    <Wrapper>
+    <Container>
       <Nav>
-        <Brand>
+        <BrandLink to="/">
           <Logo src={logo} alt="সুধীজন পাঠাগার লোগো" />
           <BrandName>সুধীজন পাঠাগার</BrandName>
-        </Brand>
-        <LinkContainer>
-          <a href="#">প্রতিষ্ঠান</a>
-          <a href="#">প্রতিষ্ঠাকাল</a>
-          <a href="#">উদ্দেশ্য</a>
-          <a href="#">পরিচালনা</a>
-          <a href="#">প্রকাশনা</a>
-          <a href="#">পুরুষ্কার</a>
-          <a href="#">বৃত্তি</a>
-          <a href="#">গ্যালারী</a>
-          <a href="#">বই অনুসন্ধান</a>
-        </LinkContainer>
+        </BrandLink>
+        <NavLinks>
+          <NavLink to="/">প্রতিষ্ঠান</NavLink>
+          <NavLink to="/">প্রতিষ্ঠাকাল</NavLink>
+          <NavLink to="/purpose">উদ্দেশ্য</NavLink>
+          <NavLink to="/">পরিচালনা</NavLink>
+          <NavLink to="/publications">প্রকাশনা</NavLink>
+          <NavLink to="/prizes">পুরুষ্কার</NavLink>
+          <NavLink to="/">বৃত্তি</NavLink>
+          <NavLink to="/">গ্যালারী</NavLink>
+          <NavLink to="/">বই অনুসন্ধান</NavLink>
+        </NavLinks>
       </Nav>
-    </Wrapper>
+    </Container>
   );
 }
 
