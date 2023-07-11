@@ -56,33 +56,33 @@ function Header() {
           <NavLink to="/">প্রতিষ্ঠান</NavLink>
           <Dropdown text="প্রতিষ্ঠাকাল">
             <DropdownItem>
-              <NavLink to="/">প্রতিষ্ঠার ইতিহাস</NavLink>
+              <NavLink to="/history">প্রতিষ্ঠার ইতিহাস</NavLink>
             </DropdownItem>
             <DropdownItem>
-              <NavLink to="/">প্রতিষ্ঠাতাদের নাম</NavLink>
+              <NavLink to="/founders">প্রতিষ্ঠাতাদের নাম</NavLink>
             </DropdownItem>
           </Dropdown>
           <NavLink to="/purpose">উদ্দেশ্য</NavLink>
           <Dropdown text="পরিচালনা">
             <DropdownItem>
-              <NavLink to="/">পরিচালনা পরিষদ</NavLink>
+              <NavLink to="/board-of-directors">পরিচালনা পরিষদ</NavLink>
             </DropdownItem>
             <DropdownItem>
-              <NavLink to="/">কার্যকরী পরিষদ</NavLink>
+              <NavLink to="/executive-council">কার্যকরী পরিষদ</NavLink>
             </DropdownItem>
             <DropdownItem>
-              <NavLink to="/">ছাত্র সদস্য</NavLink>
+              <NavLink to="/student-members">ছাত্র সদস্য</NavLink>
             </DropdownItem>
             <DropdownItem>
-              <NavLink to="/">সাধারন সদস্য</NavLink>
+              <NavLink to="/general-members">সাধারন সদস্য</NavLink>
             </DropdownItem>
             <DropdownItem>
-              <NavLink to="/">জীবন সদস্য</NavLink>
+              <NavLink to="/lifetime-members">জীবন সদস্য</NavLink>
             </DropdownItem>
           </Dropdown>
           <NavLink to="/publications">প্রকাশনা</NavLink>
           <NavLink to="/prizes">পুরুষ্কার</NavLink>
-          <NavLink to="/">বৃত্তি</NavLink>
+          <NavLink to="/scholarships">বৃত্তি</NavLink>
           <Dropdown text="গ্যালারী">
             <DropdownItem>
               <NavLink to="/gallery/images">ছবি</NavLink>
