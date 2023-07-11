@@ -37,7 +37,7 @@ const NavLinks = styled.div`
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 16px;
 `;
 
 const NavLink = styled(_NavLink)`
