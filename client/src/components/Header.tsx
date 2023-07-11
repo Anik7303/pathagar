@@ -1,6 +1,10 @@
-import { Link, NavLink as _NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import logo from "../assets/logo.svg";
+import Dropdown from "./Dropdown";
+import DropdownItem from "./DropdownItem";
+import NavLink from "./NavLink";
+import PrimaryNavLink from "./PrimaryNavLink";
 
 const Container = styled.header`
   padding: 8px;
@@ -40,19 +44,6 @@ const NavLinks = styled.div`
   gap: 16px;
 `;
 
-const NavLink = styled(_NavLink)`
-  color: inherit;
-  text-decoration: none;
-
-  &.active {
-    font-weight: bold;
-  }
-
-  &:hover {
-    text-decoration: underline;
-  }
-`;
-
 function Header() {
   return (
     <Container>
@@ -63,14 +54,44 @@ function Header() {
         </BrandLink>
         <NavLinks>
           <NavLink to="/">প্রতিষ্ঠান</NavLink>
-          <NavLink to="/">প্রতিষ্ঠাকাল</NavLink>
+          <Dropdown text="প্রতিষ্ঠাকাল">
+            <DropdownItem>
+              <NavLink to="/">প্রতিষ্ঠার ইতিহাস</NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/">প্রতিষ্ঠাতাদের নাম</NavLink>
+            </DropdownItem>
+          </Dropdown>
           <NavLink to="/purpose">উদ্দেশ্য</NavLink>
-          <NavLink to="/">পরিচালনা</NavLink>
+          <Dropdown text="পরিচালনা">
+            <DropdownItem>
+              <NavLink to="/">পরিচালনা পরিষদ</NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/">কার্যকরী পরিষদ</NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/">ছাত্র সদস্য</NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/">সাধারন সদস্য</NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/">জীবন সদস্য</NavLink>
+            </DropdownItem>
+          </Dropdown>
           <NavLink to="/publications">প্রকাশনা</NavLink>
           <NavLink to="/prizes">পুরুষ্কার</NavLink>
           <NavLink to="/">বৃত্তি</NavLink>
-          <NavLink to="/">গ্যালারী</NavLink>
-          <NavLink to="/">বই অনুসন্ধান</NavLink>
+          <Dropdown text="গ্যালারী">
+            <DropdownItem>
+              <NavLink to="/gallery/images">ছবি</NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/gallery/videos">ভিডিও</NavLink>
+            </DropdownItem>
+          </Dropdown>
+          <PrimaryNavLink to="/books">বই অনুসন্ধান</PrimaryNavLink>
         </NavLinks>
       </Nav>
     </Container>
