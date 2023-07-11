@@ -7,11 +7,13 @@ import Home from "./pages/Home";
 import Prizes from "./pages/Prizes";
 import Publications from "./pages/Publications";
 import Purpose from "./pages/Purpose";
+import NotFound from "./pages/NotFound";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <NotFound />,
     children: [
       { index: true, element: <Home /> },
       { path: "history", element: <History /> },
