@@ -12,10 +12,6 @@ const Text = styled.span`
   display: flex;
   align-items: center;
   cursor: pointer;
-
-  ${Container}:hover & {
-    font-weight: bold;
-  }
 `;
 
 const Content = styled.ul`

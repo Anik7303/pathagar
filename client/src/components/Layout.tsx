@@ -1,6 +1,7 @@
 import { PropsWithChildren } from "react";
 import styled from "styled-components";
 import Header from "./Header";
+import Footer from "./Footer";
 
 const Container = styled.div`
   width: 100%;
@@ -15,18 +16,12 @@ const Content = styled.main`
   flex: 1;
 `;
 
-const Footer = styled.footer`
-  grid-area: footer;
-  padding: 8px;
-  font-size: 0.8rem;
-`;
-
 function Layout({ children }: PropsWithChildren) {
   return (
     <Container>
       <Header />
       <Content>{children}</Content>
-      <Footer>সুধীজন পাঠাগার &copy; ২০২৩</Footer>
+      <Footer />
     </Container>
   );
 }

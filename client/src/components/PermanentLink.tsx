@@ -11,7 +11,7 @@ function ParmanentLink({
   target = "_blank",
 }: PropsWithChildren<Props>) {
   return (
-    <a href={to} target={target}>
+    <a href={to} target={target} rel="noopener noreferrer">
       {children}
     </a>
   );
