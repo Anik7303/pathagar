@@ -6,7 +6,7 @@ import PageLinks from "./PageLinks";
 const Wrapper = styled.footer`
   background-color: #009521;
   color: white;
-  padding: 24px 16px;
+  padding: 24px 16px 16px;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -1,4 +1,9 @@
-import { BsEnvelopeFill, BsPinMapFill, BsTelephoneFill } from "react-icons/bs";
+import {
+  BsEnvelopeFill,
+  BsFacebook,
+  BsPinMapFill,
+  BsTelephoneFill,
+} from "react-icons/bs";
 import styled from "styled-components";
 
 const Container = styled.ul`
@@ -31,22 +36,41 @@ const Link = styled.a`
   white-space: normal;
 `;
 
+const FacebookLink = styled.a.attrs(() => ({
+  target: "_blank",
+  rel: "noopener noreferrer",
+}))`
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+`;
+
 const InfoList = () => (
   <Container>
     <Item>
-      <BsTelephoneFill />
+      <BsTelephoneFill title="টেলিফোন নম্বর" />
       <Info>
         <Link href="tel:027632221">৭৬৩২২২১</Link>
       </Info>
     </Item>
     <Item>
-      <BsEnvelopeFill />
+      <BsEnvelopeFill title="ই-মেইল" />
       <Info>
         <Link href="mailto:sudhigan@gmail.com">sudhigan@gmail.com</Link>
       </Info>
     </Item>
     <Item>
-      <BsPinMapFill />
+      <BsFacebook title="Facebook" />
+      <Info>
+        <FacebookLink href="https://www.facebook.com/people/Sudhijan-Pathagar-%E0%A6%B8%E0%A7%81%E0%A6%A7%E0%A7%80%E0%A6%9C%E0%A6%A8-%E0%A6%AA%E0%A6%BE%E0%A6%A0%E0%A6%BE%E0%A6%97%E0%A6%BE%E0%A6%B0/100064217640858/">
+          সুধীজন পাঠাগার
+        </FacebookLink>
+      </Info>
+    </Item>
+    <Item>
+      <BsPinMapFill title="ঠিকানা" />
       <Info>২৩১ বঙ্গবন্ধু সড়ক, নারায়ণগঞ্জ</Info>
     </Item>
   </Container>
