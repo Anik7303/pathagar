@@ -1,7 +1,9 @@
+import Slider from "../components/Slider";
+
 function Home() {
   return (
     <>
-      <h2>হোম পেইজ</h2>
+      <Slider />
     </>
   );
 }
