@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "Sudhijan Pathagar",
+    "address": "231 Bangabandhu Road, Narayanganj",
+    "phone": "02-7632221"
+  },
+  "links": {
+    "home": "Home",
+    "institute": "Institution",
+    "founding_period": "History",
+    "founding_period.history": "History",
+    "founding_period.founders": "Founders",
+    "objective": "Objective",
+    "administration": "Administration",
+    "administration.board_of_directors": "Board of Directors",
+    "administration.executive_council": "Executive Council",
+    "administration.student_member": "Student Member",
+    "administration.general_member": "General Member",
+    "administration.lifetime_member": "Lifetime Member",
+    "publication": "Publication",
+    "award": "Award",
+    "scholarship": "Scholarship",
+    "gallery": "Gallery",
+    "gallery.image": "Image",
+    "gallery.video": "Video",
+    "book_search": "Book Search"
+  },
+  "locale": {
+    "label": "Change Language",
+    "locale": "{locale, select, en {English} bn {Bangla} other {Unknown}}"
+  }
+}

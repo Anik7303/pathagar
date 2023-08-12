@@ -1,0 +1,32 @@
+{
+  "info": {
+    "name": "সুধীজন পাঠাগার",
+    "address": "২৩১ বঙ্গবন্ধু সড়ক, নারায়ণগঞ্জ",
+    "phone": "০২-৭৬৩২২২১"
+  },
+  "links": {
+    "home": "হোম",
+    "institute": "প্রতিষ্ঠান",
+    "founding_period": "প্রতিষ্ঠাকাল",
+    "founding_period.history": "প্রতিষ্ঠার ইতিহাস",
+    "founding_period.founders": "প্রতিষ্ঠাতাদের নাম",
+    "objective": "উদ্দেশ্য",
+    "administration": "পরিচালনা",
+    "administration.board_of_directors": "পরিচালনা পরিষদ",
+    "administration.executive_council": "কার্যকরী পরিষদ",
+    "administration.student_member": "ছাত্র সদস্য",
+    "administration.general_member": "সাধারণ সদস্য",
+    "administration.lifetime_member": "আজীবন সদস্য",
+    "publication": "প্রকাশনা",
+    "award": "পুরস্কার",
+    "scholarship": "বৃত্তি",
+    "gallery": "গ্যালারি",
+    "gallery.image": "ছবি",
+    "gallery.video": "ভিডিও",
+    "book_search": "বই অনুসন্ধান"
+  },
+  "locale": {
+    "label": "ভাষা পরিবর্তন করুন",
+    "locale": "{locale, select, en {ইংরেজি} bn {বাংলা} other {অজানা}}"
+  }
+}
