@@ -7,22 +7,28 @@
   "links": {
     "home": "Home",
     "institute": "Institution",
-    "founding_period": "History",
-    "founding_period.history": "History",
-    "founding_period.founders": "Founders",
+    "founding_period": {
+      "index": "History",
+      "history": "History",
+      "founders": "Founders"
+    },
     "objective": "Objective",
-    "administration": "Administration",
-    "administration.board_of_directors": "Board of Directors",
-    "administration.executive_council": "Executive Council",
-    "administration.student_member": "Student Member",
-    "administration.general_member": "General Member",
-    "administration.lifetime_member": "Lifetime Member",
+    "administration": {
+      "index": "Administration",
+      "board_of_directors": "Board of Directors",
+      "executive_council": "Executive Council",
+      "student_member": "Student Member",
+      "general_member": "General Member",
+      "lifetime_member": "Lifetime Member"
+    },
     "publication": "Publication",
     "award": "Award",
     "scholarship": "Scholarship",
-    "gallery": "Gallery",
-    "gallery.image": "Image",
-    "gallery.video": "Video",
+    "gallery": {
+      "index": "Gallery",
+      "image": "Image",
+      "video": "Video"
+    },
     "book_search": "Book Search"
   },
   "locale": {
