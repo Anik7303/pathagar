@@ -9,9 +9,11 @@ interface BrandProps {
 
 export default function Brand({ href, label, src }: BrandProps) {
   return (
-    <Link href={href} className="flex items-center gap-3">
+    <Link href={href} className="flex items-center gap-2">
       <Image src={src} alt="logo" height={40} />
-      <span className="text-xl font-bold text-[#812511]">{label}</span>
+      <span className="whitespace-nowrap text-lg font-bold text-secondary-default">
+        {label}
+      </span>
     </Link>
   );
 }

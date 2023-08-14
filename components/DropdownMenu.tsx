@@ -1,6 +1,7 @@
 "use client";
 import clsx from "clsx";
 import { usePathname } from "next-intl/client";
+import { ChevronDown } from "react-feather";
 
 interface DropdownMenuProps {
   children: React.ReactNode;
@@ -17,20 +18,23 @@ export default function DropdownMenu({
 }: DropdownMenuProps) {
   const pathname = usePathname();
   const isActive = pathname !== "/" && href.includes(pathname);
+
   return (
     <div className="group relative rounded p-2" data-open={isActive}>
       <span
         className={clsx(
-          "cursor-pointer rounded p-2 text-slate-500",
+          "cursor-pointer rounded text-slate-500",
           isActive ? "text-secondary-default" : "group-hover:text-slate-700",
-          "group-data-[open=true]:text-secondary-default]"
+          "group-data-[open=true]:text-secondary-default]",
+          "flex items-center gap-1"
         )}
       >
         {label}
+        <ChevronDown width={15} height={15} />
       </span>
       <ul
         className={clsx(
-          "absolute top-10 box-border hidden w-max flex-col gap-1 border-2 bg-white p-4 group-hover:flex lg:shadow-lg",
+          "absolute top-10 box-border hidden w-max flex-col gap-0 border-2 bg-white p-4 group-hover:flex lg:shadow-lg",
           align === "center" && "left-1/2 -translate-x-1/2",
           align === "left" && "lg:left-0",
           align === "right" && "lg:right-0"
