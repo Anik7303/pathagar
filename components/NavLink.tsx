@@ -15,7 +15,7 @@ export default function NavLink({ href, children }: NavLinkProps) {
     <Link
       href={href}
       className={clsx(
-        "inline-block w-full rounded p-2 text-slate-500",
+        "inline-block w-full whitespace-nowrap rounded p-2 text-slate-500",
         isActive ? "text-[rgb(129,37,17)]" : "hover:text-slate-700"
       )}
     >
