@@ -22,8 +22,8 @@ export default function DropdownMenu({
       <span
         className={clsx(
           "cursor-pointer rounded p-2 text-slate-500",
-          isActive ? "text-[rgb(129,37,17)]" : "group-hover:text-slate-700",
-          "group-data-[open=true]:text-[rgb(129,37,17)]"
+          isActive ? "text-secondary-default" : "group-hover:text-slate-700",
+          "group-data-[open=true]:text-secondary-default]"
         )}
       >
         {label}
