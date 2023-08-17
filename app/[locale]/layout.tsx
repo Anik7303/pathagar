@@ -1,3 +1,4 @@
+import Navigation from "@/components/Navigation";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -19,7 +20,8 @@ export default function RootLayout({
   return (
     <html lang={locale}>
       <body className={inter.className}>
-        <main className="container mx-auto">{children}</main>
+        <Navigation />
+        {children}
       </body>
     </html>
   );
