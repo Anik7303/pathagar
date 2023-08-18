@@ -8,6 +8,8 @@ import PrimaryNavLink from "./PrimaryNavLink";
 
 const Container = styled.header`
   padding: 8px;
+  z-index: 1;
+  background-color: ${(props) => props.theme.color.white};
 `;
 
 const Nav = styled.nav`

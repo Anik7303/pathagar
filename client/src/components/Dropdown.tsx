@@ -17,7 +17,7 @@ const Text = styled.span`
 const Content = styled.ul`
   list-style: none;
   position: absolute;
-  border: 2px solid #eee;
+  background-color: ${(props) => props.theme.color.white};
   box-shadow: 0 0 8px #ccc;
   left: 50%;
   transform: translateX(-50%);
